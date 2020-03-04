@@ -15,15 +15,10 @@ export class GruposComponent implements OnInit {
 
     //getgrupos retorna um observável, porém o subscribe
     //sobrescreve um observador a um observável
-    this.http.getgrupos().subscribe((data) => {
+    this.http.getGrupos().subscribe((data) => {
       console.log(data);
     });
-
-    this.grupos.push(
-      new Grupo(1, "MEDICAMENTOS"),
-      new Grupo(2, "PERFUMARIA"),
-      new Grupo(3, "TESTE")
-    );
+    
   }
 
   ngOnInit(): void {
