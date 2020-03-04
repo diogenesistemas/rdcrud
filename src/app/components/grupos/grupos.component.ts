@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Grupo } from 'src/app/models/Grupo';
+import { HttpService } from 'src/app/services/http.service';
 
 @Component({
   selector: 'app-grupos',
@@ -10,7 +11,10 @@ export class GruposComponent implements OnInit {
 
   public grupos: Grupo[] = [];
 
-  constructor() {
+  constructor(private http: HttpService) {
+   
+    http.getgrupos();
+
     this.grupos.push(
       new Grupo(1, "MEDICAMENTOS"),
       new Grupo(2, "PERFUMARIA"),

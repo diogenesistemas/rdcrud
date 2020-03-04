@@ -9,6 +9,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { GruposComponent } from './components/grupos/grupos.component';
 import { ListaDeProdutosComponent } from './components/lista-de-produtos/lista-de-produtos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
