@@ -12,8 +12,11 @@ export class GruposComponent implements OnInit {
   public grupos: Grupo[] = [];
 
   constructor(private http: HttpService) {
-   
-    http.getgrupos();
+
+    //getgrupos retorna um observável, porém o subscribe
+    this.http.getgrupos().subscribe((data) => {
+      console.log(data);
+    });
 
     this.grupos.push(
       new Grupo(1, "MEDICAMENTOS"),
