@@ -10,6 +10,7 @@ import { ContatoComponent } from './components/contato/contato.component';
 import { GruposComponent } from './components/grupos/grupos.component';
 import { ListaDeProdutosComponent } from './components/lista-de-produtos/lista-de-produtos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProdutoComponent } from './components/produto/produto.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     SobreComponent,
     ContatoComponent,
     GruposComponent,
-    ListaDeProdutosComponent
+    ListaDeProdutosComponent,
+    ProdutoComponent
   ],
   imports: [
     BrowserModule,
