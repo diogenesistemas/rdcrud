@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Grupo } from 'src/app/models/Grupo';
-import { HttpService } from 'src/app/services/http.service';
+import { HttpService } from 'src/app/services/http.service'
 
 @Component({
   selector: 'app-grupos',
@@ -14,6 +14,7 @@ export class GruposComponent implements OnInit {
   constructor(private http: HttpService) {
 
     //getgrupos retorna um observável, porém o subscribe
+    //sobrescreve um observador a um observável
     this.http.getgrupos().subscribe((data) => {
       console.log(data);
     });
