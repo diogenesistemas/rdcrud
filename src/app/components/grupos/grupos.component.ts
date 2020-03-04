@@ -10,8 +10,12 @@ export class GruposComponent implements OnInit {
 
   public grupos: Grupo[] = [];
 
-  constructor() { 
-    this.grupos.push(new Grupo(2, "pipa media"), new Grupo(1, "pipa pequena"), new Grupo(3, "pipa grande"));
+  constructor() {
+    this.grupos.push(
+      new Grupo(1, "MEDICAMENTOS"),
+      new Grupo(2, "PERFUMARIA"),
+      new Grupo(3, "TESTE")
+    );
   }
 
   ngOnInit(): void {
