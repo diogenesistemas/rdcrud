@@ -8,7 +8,7 @@ import { Grupo } from 'src/app/models/Grupo';
 })
 export class GruposComponent implements OnInit {
 
-  public grupos: Grupos[] = [];
+  public grupos: Grupo[] = [];
 
   constructor() { 
     this.grupos.push(new Grupo(2, "pipa media"));
