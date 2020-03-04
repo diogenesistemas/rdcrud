@@ -1,2 +1,11 @@
 <!-- {{grupos | json}} -->
-<button class="btn btn-primary">Entrar</button>
+<!-- <button class="btn btn-primary">Entrar</button> -->
+<div class="row">
+    <div class="col-4">
+        <ul class="list-group">
+            <li *ngFor="let g of grupos">
+                <a class="list-group-item list-group-item-action" href="#">{{g.desc}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

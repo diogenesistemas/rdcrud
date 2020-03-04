@@ -14,7 +14,13 @@ function AdaptadorDeGrupo(data: any[]) {
 
 function AdaptadorDeProduto(data: any[]) {
   return data.map(
-    (el) => { return new Produto(el.COD_PRODUTO, el.DESC, el.REG_ANVISA, el.FL_CONTROLADO, el.COD_GRUPO) }
+    (el) => new Produto(
+      el.COD_PRODUTO,
+      el.DESC,
+      el.REG_ANVISA,
+      el.FL_CONTROLADO,
+      el.COD_GRUPO
+    )
   )
 }
 

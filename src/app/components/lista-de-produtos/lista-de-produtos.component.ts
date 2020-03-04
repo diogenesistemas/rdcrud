@@ -14,7 +14,7 @@ export class ListaDeProdutosComponent implements OnInit {
   constructor(private http: HttpService) {
 
     this.http.getProdutos().subscribe((data) => {
-      console.log(data);
+      this.produtos = data;
     });
 
   }
