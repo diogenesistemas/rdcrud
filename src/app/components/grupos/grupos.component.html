@@ -4,7 +4,7 @@
     <div class="col-4">
         <ul class="list-group">
             <li *ngFor="let g of grupos">
-                <a class="list-group-item list-group-item-action" href="#">{{g.desc}}</a>
+                <a class="list-group-item list-group-item-action" href="#" (click)="grupoClicado.emit(g)">{{g.desc}}</a>
             </li>
         </ul>
     </div>
