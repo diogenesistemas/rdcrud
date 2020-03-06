@@ -1,4 +1,4 @@
-npm install -g @angular/angular-cli
+npm install -g @angular/cli
 
 ng new rdcrud
 ng serve -o
