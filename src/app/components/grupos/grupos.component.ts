@@ -17,13 +17,15 @@ export class GruposComponent implements OnInit {
 
   @Output() grupoClicado = new EventEmitter();
 
+  private grupoTotal: Grupo = new Grupo(0, "TODOS");
+
   constructor(private http: HttpService) {
 
     //getgrupos retorna um observável, porém o subscribe
     //sobrescreve um observador a um observável
     this.http.getGrupos().subscribe(
       (data) => {
-        this.grupos = data;
+        this.grupos = [this.grupoTotal, ...data];
       });
   }
 
