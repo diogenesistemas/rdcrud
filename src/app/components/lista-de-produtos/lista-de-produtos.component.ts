@@ -23,12 +23,12 @@ export class ListaDeProdutosComponent implements OnInit {
 
   listarDoGrupo(codDoGrupo:number){
     
-    if(codDoGrupo == 0){
-     this.produtosExibidos = this.produtos;
-    }else{
+    if(codDoGrupo != 0){
       this.produtosExibidos = this.produtos.filter(
         produto => produto.cod_grupo == codDoGrupo
-      );
+      );    
+    }else{
+      this.produtosExibidos = this.produtos;
     }
   
 
