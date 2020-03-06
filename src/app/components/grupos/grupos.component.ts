@@ -19,7 +19,7 @@ export class GruposComponent implements OnInit {
 
   private grupoTotal: Grupo = new Grupo(0, "TODOS");
 
-  constructor(private http: HttpService) {
+constructor(private http: HttpService) {
 
     //getgrupos retorna um observável, porém o subscribe
     //sobrescreve um observador a um observável
