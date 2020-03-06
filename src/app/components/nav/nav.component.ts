@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
+
+interface iItem {
+  lable: string;
+  route: string;
+  ativo: boolean;
+}
+
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -7,7 +14,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  itens: iItem[] = [
+    {
+      ativo: true,
+      lable: 'Home',
+      route: "/"
+    },
+    {
+      ativo: false,
+      lable: 'Sobre',
+      route: "/sobre"
+    },
+    {
+      ativo: true,
+      lable: 'Contato',
+      route: "/contato"
+    },
+
+  ];
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }
