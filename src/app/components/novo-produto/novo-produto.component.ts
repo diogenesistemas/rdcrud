@@ -27,4 +27,8 @@ export class NovoProdutoComponent implements OnInit {
     this.createForm(new Produto())
   }
 
+  enviarProduto(){
+    
+  }
+
 }

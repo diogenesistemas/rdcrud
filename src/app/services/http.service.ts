@@ -46,4 +46,19 @@ export class HttpService {
     return obs.pipe(
       map(AdaptadorDeProduto));
   }
+
+  postProdutos(produto: Produto) {
+    let produtoEnviado;
+
+    produtoEnviado = JSON.stringify({
+      COD_PRODUTO: produto.cod,
+      DESC: produto.desc,
+      REG_ANVISA: produto.regAnvisa,
+      FL_CONTROLADO: produto.controlado,
+      COD_GRUPO: produto.cod_grupo
+    }
+    );
+
+    let obs = this.http.post(URL + "/produtos", produtoEnviado);
+  }
 }

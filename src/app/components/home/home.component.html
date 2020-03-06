@@ -1,2 +1,10 @@
-<app-grupos (grupoClicado)="listarGrupo($event)"></app-grupos>
-<app-lista-de-produtos #lista></app-lista-de-produtos>
+<div class="container-fluid">
+    <div class="d-flex w-100 mt-3">
+        <div class="categorias p-1">
+            <app-grupos (grupoClicado)="listarGrupo($event)"></app-grupos>
+        </div>
+        <div class="produtos p-1">
+            <app-lista-de-produtos #lista></app-lista-de-produtos>
+        </div>
+    </div>
+</div>

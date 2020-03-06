@@ -12,6 +12,7 @@ import { ListaDeProdutosComponent } from './components/lista-de-produtos/lista-d
 import { HttpClientModule } from '@angular/common/http';
 import { ProdutoComponent } from './components/produto/produto.component';
 import { NovoProdutoComponent } from './components/novo-produto/novo-produto.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NovoProdutoComponent } from './components/novo-produto/novo-produto.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
