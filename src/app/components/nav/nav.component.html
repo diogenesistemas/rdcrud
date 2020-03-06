@@ -7,11 +7,8 @@
         </ul>
     </div>
 </nav> -->
-
-
-
 <ul>   
-    <li *ngFor="let item of itens">
+    <li [ngClass]="{'destaque':item.ativo}" *ngFor="let item of itens">
         <a href="#" routerLink="{{item.route}}">{{item.lable}}</a>
     </li>
 </ul>

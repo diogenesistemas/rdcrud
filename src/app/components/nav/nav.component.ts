@@ -26,7 +26,7 @@ export class NavComponent implements OnInit {
       route: "/sobre"
     },
     {
-      ativo: true,
+      ativo: false,
       lable: 'Contato',
       route: "/contato"
     },
