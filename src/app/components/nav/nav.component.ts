@@ -30,6 +30,11 @@ export class NavComponent implements OnInit {
       lable: 'Contato',
       route: "/contato"
     },
+    {
+      ativo: false,
+      lable: 'Cadastrar Produto',
+      route: "/novoproduto"
+    },
 
   ];
 
