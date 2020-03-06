@@ -40,4 +40,18 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  destacar(item: iItem) {
+    // this.itens.map(
+    //   (item) =>{
+    //     item.ativo = false;
+    //     return item;
+    //   }
+    // );
+
+    this.itens.forEach(
+      (item) => {item.ativo = false}
+    );
+    item.ativo = true;
+  }
+
 }

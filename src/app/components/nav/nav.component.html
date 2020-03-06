@@ -7,8 +7,13 @@
         </ul>
     </div>
 </nav> -->
-<ul>   
-    <li [ngClass]="{'destaque':item.ativo}" *ngFor="let item of itens">
-        <a href="#" routerLink="{{item.route}}">{{item.lable}}</a>
-    </li>
-</ul>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item" [ngClass]="{'active':item.ativo}" *ngFor="let item of itens">
+                <a class="nav-link" href="#" routerLink="{{item.route}}" (click)="destacar(item)">{{item.lable}}</a>
+            </li>
+        </ul>
+    </div>
+</nav>
