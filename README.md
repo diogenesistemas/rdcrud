@@ -13,3 +13,5 @@ ng g c components/nav
 ng generate service services/http
 
 ng build --prod
+
+ao baixar um projeto, instalar as dependências com npm install
