@@ -16,9 +16,9 @@ export class NavComponent implements OnInit {
 
   itens: iItem[] = [
     {
-      ativo: true,
+      ativo: false,
       lable: 'Home',
-      route: "/"
+      route: "/home"
     },
     {
       ativo: false,
@@ -41,13 +41,6 @@ export class NavComponent implements OnInit {
   }
 
   destacar(item: iItem) {
-    // this.itens.map(
-    //   (item) =>{
-    //     item.ativo = false;
-    //     return item;
-    //   }
-    // );
-
     this.itens.forEach(
       (item) => {item.ativo = false}
     );
